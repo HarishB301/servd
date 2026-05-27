@@ -596,9 +596,7 @@ Rules:
 // Get user's saved recipes
 export async function getSavedRecipes() {
   try {
-    
     const user = await checkUser();
-    console.log(user,"1111111111111111111111111111111111111111111111111111");
     if (!user) {
       throw new Error("User not authenticated");
     }
