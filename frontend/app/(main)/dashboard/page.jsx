@@ -169,7 +169,7 @@ export default async function DashboardPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {areas.map((area,index) => (
               <Link
-                key={index}
+                 key={`${area.strArea}-${index}`}
                 href={`/recipes/cuisine/${area.strArea
                   .toLowerCase()
                   .replace(/\s+/g, "-")}`}
